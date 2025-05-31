@@ -1,0 +1,187 @@
+/* Reset Básico para melhor consistência entre navegadores */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif; /* Usando Poppins, se não carregar, usa sans-serif padrão */
+    line-height: 1.6;
+    background-color: #f8f8f8; /* Um branco levemente acinzentado */
+    color: #333;
+}
+
+.header {
+    display: flex;
+    flex-direction: column; /* Coluna para logo do canto e conteúdo principal */
+    align-items: flex-start; /* Alinha o conteúdo à esquerda */
+    padding: 20px 5%; /* Padding lateral para afastar do canto */
+    position: relative; /* Para posicionar a logo no canto */
+}
+
+.logo-top-left {
+    position: absolute;
+    top: 20px;
+    left: 5%;
+    width: 40px; /* Ajuste o tamanho conforme a sua logo */
+    height: 40px; /* Ajuste o tamanho conforme a sua logo */
+    display: flex; /* Para centralizar a imagem dentro do contêiner */
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-top-left img {
+    max-width: 100%;
+    max-height: 100%;
+    display: block; /* Remove espaço extra abaixo da imagem */
+}
+
+.header-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    margin-top: 80px; /* Espaço para a logo de cima */
+}
+
+.header-content h1 {
+    font-size: 3.5em; /* Tamanho grande para o título "Descubra Novos Jogos" */
+    font-weight: 700;
+    margin-bottom: 30px;
+    color: #222;
+    text-align: left;
+    width: 100%; /* Ocupa a largura total para alinhar o texto */
+}
+
+.intro-section {
+    display: flex;
+    align-items: center; /* Alinha o texto e a imagem do banner */
+    gap: 50px; /* Espaço entre o texto e o banner */
+    width: 100%;
+    flex-wrap: wrap; /* Permite que os itens quebrem a linha em telas pequenas */
+}
+
+.intro-section p {
+    flex: 1; /* Ocupa o espaço disponível */
+    font-size: 1.1em;
+    max-width: 600px; /* Limita a largura do texto para melhor leitura */
+    color: #555;
+}
+
+.header-banner {
+    width: 450px; /* Largura do banner */
+    height: auto;
+    border-radius: 8px; /* Bordas arredondadas, se desejar */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    flex-shrink: 0; /* Não encolhe a imagem */
+}
+
+/* Seção Sobre Nós */
+.about-us-section {
+    padding: 80px 5%;
+    background-color: #fff;
+    text-align: center;
+}
+
+.about-us-section h2 {
+    font-size: 2.8em;
+    font-weight: 700;
+    margin-bottom: 50px;
+    color: #222;
+}
+
+.about-us-content {
+    display: flex;
+    justify-content: center;
+    gap: 40px; /* Espaço entre os blocos de texto */
+    flex-wrap: wrap; /* Permite que os blocos quebrem a linha em telas pequenas */
+    max-width: 1200px; /* Largura máxima para os blocos de texto */
+    margin: 0 auto; /* Centraliza os blocos */
+}
+
+.about-text-block {
+    flex: 1; /* Faz com que os blocos ocupem o espaço igualmente */
+    min-width: 300px; /* Largura mínima para evitar que fiquem muito estreitos */
+    max-width: 500px; /* Largura máxima para os blocos de texto */
+    text-align: left; /* Alinha o texto à esquerda dentro do bloco */
+    font-size: 1em;
+    color: #666;
+}
+
+footer {
+    text-align: center;
+    padding: 30px 20px;
+    background-color: #333;
+    color: #fff;
+    font-size: 0.9em;
+}
+
+/* Responsividade Básica */
+@media (max-width: 1024px) {
+    .header-content h1 {
+        font-size: 2.8em;
+    }
+
+    .intro-section {
+        flex-direction: column; /* Pilha o texto e o banner verticalmente */
+        text-align: center;
+    }
+
+    .intro-section p {
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .header-banner {
+        width: 100%;
+        max-width: 450px; /* Mantém uma largura máxima para o banner */
+        margin-top: 30px;
+    }
+
+    .about-us-content {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .about-text-block {
+        text-align: center;
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .header-content h1 {
+        font-size: 2.2em;
+    }
+    .intro-section p {
+        font-size: 1em;
+    }
+    .about-us-section h2 {
+        font-size: 2.2em;
+    }
+    .about-text-block {
+        font-size: 0.9em;
+    }
+    .header, .about-us-section {
+        padding: 20px 5%; /* Ajuste o padding para telas menores */
+    }
+    .header-content {
+        margin-top: 60px; /* Ajuste para o padding menor */
+    }
+}
+
+@media (max-width: 480px) {
+    .header-content h1 {
+        font-size: 1.8em;
+    }
+    .about-us-section h2 {
+        font-size: 1.8em;
+    }
+    .logo-top-left {
+        width: 30px;
+        height: 30px;
+        top: 15px;
+        left: 15px;
+    }
+}

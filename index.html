@@ -12,25 +12,78 @@
       padding: 40px 20px;
       line-height: 1.6;
     }
+    header {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+    header img {
+      max-width: 200px; /* Ajuste conforme a necessidade */
+      height: auto;
+    }
     h1, h2 {
       color: #222;
     }
-    img {
+    .banner {
+      margin: 20px 0;
+      text-align: center;
+    }
+    .banner img {
       max-width: 100%;
       height: auto;
+    }
+    .screenshots {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      justify-content: center;
+    }
+    .screenshots img {
+      max-width: 200px;
+      height: auto;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    footer {
+      margin-top: 40px;
+      text-align: center;
+      font-size: 0.9rem;
+      color: #555;
     }
   </style>
 </head>
 <body>
-  <h1>Descubra Novos Jogos</h1>
-  <p>Bem-vindo à AT7ENA GAMES STUDIO, onde a diversão e a inovação se encontram para criar experiências de jogo únicas. Explore nossos jogos e mergulhe em aventuras emocionantes.</p>
+  <!-- Header com logo -->
+  <header>
+    <!-- Substitua "logo.png" pelo nome do seu arquivo salvo em /images -->
+    <img src="images/logo.png" alt="Logo AT7ENA GAMES">
+  </header>
 
+  <!-- Título e descrição -->
+  <h1>Bem-vindo à AT7ENA GAMES STUDIO</h1>
+  <p>Na AT7ENA GAMES, criamos experiências de jogabilidade únicas para todos os públicos. Navegue pelos nossos projetos e conheça nossos lançamentos.</p>
+
+  <!-- Banner principal (se tiver um) -->
+  <div class="banner">
+    <!-- Substitua "banner.jpg" pelo nome do seu arquivo salvo em /images -->
+    <img src="images/banner.jpg" alt="Banner dos jogos AT7ENA">
+  </div>
+
+  <!-- Seção de jogos ou capturas de tela -->
+  <h2>Nossos Jogos</h2>
+  <div class="screenshots">
+    <!-- Exemplo: screenshot1.png, screenshot2.png etc. -->
+    <img src="images/screenshot1.png" alt="Captura de tela do jogo 1">
+    <img src="images/screenshot2.png" alt="Captura de tela do jogo 2">
+    <img src="images/screenshot3.png" alt="Captura de tela do jogo 3">
+  </div>
+
+  <!-- Sobre nós -->
   <h2>Sobre Nós</h2>
-  <p>A AT7ENA GAMES é uma empresa de jogos de computador apaixonada por atender o público gamer e jogadores casuais. Desde 2018, criamos jogos envolventes e inovadores para proporcionar uma experiência única de entretenimento.</p>
-  <p>Nossa missão é levar a diversão e a emoção dos jogos para todos, criando mundos virtuais cativantes e desafiadores. Estamos comprometidos em oferecer a melhor experiência de jogo para nossos jogadores.</p>
+  <p>A AT7ENA GAMES é um estúdio apaixonado por levar diversão e inovação ao público gamer. Fundada em 2018, nossa missão é criar mundos virtuais envolventes e desafiadores. Junte-se a nós nessa jornada!</p>
 
+  <!-- Footer simples -->
   <footer>
-    <p>© 2023 AT7ENA GAMES. Todos os direitos reservados.</p>
+    <p>© 2025 AT7ENA GAMES. Todos os direitos reservados.</p>
   </footer>
 </body>
 </html>
